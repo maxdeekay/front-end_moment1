@@ -19,7 +19,17 @@
 
     <main>
         <h2>Hur ser min arbetsprocess ut när det kommer till utveckling och publicering?</h2>
-        <p>Jo såhär är det...</p>
+        <p>För att automatisera så mycket som möjligt när det kommer till utveckling och publicering använder jag mig av Parcel, GitHub och Netlify.</p>
+        <h3>Min arbetsprocess ser ungefär ut som följande:</h3>
+        <ol>
+            <li>En förrändring i koden görs.</li>
+            <li>Förrändringen förbereds i Git, jag lägger till ett commit-meddelande och pushar till mitt remote-repo, oftast i en separat branch.</li>
+            <li>När en förrändring är redo att gå live så använder jag "git merge" för att lägga till mina förrändringar till main branch och sen "npm run build" för att kompilera HTML, CSS och JavaScript.</li>
+            <li>De kompilerade filerna hamnar i en mapp som heter "dist" som sedan Netlify kollar på i mitt Git-repo för att kunna spegla dem på webbplatsen.</li>
+        </ol>
+
+        <p>Det som är automatiserat med Parcel är optimering av bilder, bakåtkompabilitet, kopiering av arbetsfiler till mapp för publicering med optimerade filer samt minifiering av HTML, CSS och JS.</p>
+        <p>Det som är automatiserat med GitHub och Netlify är publiceringen av webbplatsen.</p>
     </main>
 
     <footer>

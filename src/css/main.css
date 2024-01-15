@@ -45,10 +45,10 @@ main {
     line-height: 2em;
 }
 
-main>h2 { padding-top: 0.5em; }
+main>h2, main>h3 { padding-top: 0.5em; }
 main>p { padding: 1em 0 0.5em 0; }
 main>ul { padding-top: 0.5em; }
-main>ul>li { padding: 0.5em 0 0.5em 0; }
+main>ul>li, main>ol>li { padding: 0.5em 0 0.5em 0; }
 
 footer {
     border-top: 1px solid black;

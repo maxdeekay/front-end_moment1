@@ -47,7 +47,7 @@ main {
   line-height: 2em;
 }
 
-main > h2 {
+main > h2, main > h3 {
   padding-top: .5em;
 }
 
@@ -59,7 +59,7 @@ main > ul {
   padding-top: .5em;
 }
 
-main > ul > li {
+main > ul > li, main > ol > li {
   padding: .5em 0;
 }
 
