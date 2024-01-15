@@ -1,1 +1,1 @@
-{"mappings":"AAAA","sources":["src/css/main.css"],"sourcesContent":["* {\r\n    color: red;\r\n}"],"names":[],"version":3,"file":"index.34df27b5.css.map","sourceRoot":"/__parcel_source_root/"}
+{"mappings":"AAAA","sources":["src/css/main.css"],"sourcesContent":["* {\r\n    color: red;\r\n    font-family: \"Verdana\", \"sans-serif\";\r\n}"],"names":[],"version":3,"file":"index.34df27b5.css.map","sourceRoot":"/__parcel_source_root/"}
