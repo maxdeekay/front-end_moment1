@@ -6,7 +6,7 @@
   font-family: Roboto, "sans-serif";
 }
 
-p, li {
+p {
   font-size: 1.2em;
 }
 
@@ -19,25 +19,15 @@ body {
 
 header {
   background-color: #ded0b6;
-  border-bottom: 1px solid #000;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
   display: flex;
 }
 
-header > ul > li {
-  padding-left: 1.5em;
-  display: inline;
-}
-
 header a {
   color: #000;
   text-decoration: none;
-}
-
-header a:hover {
-  text-decoration: underline;
 }
 
 main {
@@ -85,6 +75,134 @@ footer {
   border: 1px solid #000;
   max-width: 14em;
   margin: .5em;
+}
+
+nav {
+  background-color: #ded0b6;
+  width: 250px;
+  height: 100vh;
+  font-size: 1.4em;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-shadow: 0 0 10px #000000b5;
+}
+
+nav ul {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  width: 100%;
+  padding: .8em 0;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav li:hover {
+  cursor: pointer;
+  background-color: #bbab8c;
+}
+
+.menu-btn {
+  cursor: pointer;
+  background-color: #bbab8c;
+  border: 2px solid #000;
+  align-items: center;
+  padding: 8px 15px;
+  display: flex;
+}
+
+.open {
+  margin: 0 1em;
+}
+
+.menu-btn:hover {
+  background-color: #bbab8c;
+  box-shadow: 0 0 5px #0000006b;
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.bars {
+  background-color: #000;
+  width: 20px;
+  height: 3px;
+  margin: 5px 0;
+  display: block;
+}
+
+.menu-text {
+  color: #000;
+  font-size: 1.2em;
+}
+
+.close {
+  margin: 1em 1.5em;
+  padding: 10px 15px;
+}
+
+.cross1 {
+  width: 25px;
+  position: relative;
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.cross2 {
+  width: 25px;
+  position: relative;
+  top: -3px;
+  transform: rotate(135deg);
+}
+
+@media only screen and (width >= 992px) {
+  header {
+    padding: 1em;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  #open-menu {
+    display: none !important;
+  }
+
+  header {
+    position: static;
+  }
+
+  nav {
+    width: auto;
+    height: auto;
+    font-size: 1.4em;
+    position: static;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0;
+    display: block !important;
+  }
+
+  nav ul {
+    height: 100%;
+  }
+
+  nav li {
+    padding-left: .5em;
+    padding-right: .5em;
+    display: inline;
+  }
 }
 
 @media (width <= 800px) {
