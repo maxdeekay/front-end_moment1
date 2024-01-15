@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="module" defer></script>
+    <title>Moment 1</title>
+</head>
+<body>
+    <header>
+        <h1>DT211G - MOMENT 1</h1>
+        <ul>
+            <li><a href="index.html">STARTSIDA</li></a>
+            <li><a href="bilder.html">BILDER</li></a>
+            <li><a href="arbetsprocess.html">ARBETSPROCESS</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <h2>Hur ser min arbetsprocess ut när det kommer till utveckling och publicering?</h2>
+        <p>För att automatisera så mycket som möjligt när det kommer till utveckling och publicering använder jag mig av Parcel, GitHub och Netlify.</p>
+        <h3>Min arbetsprocess ser ungefär ut som följande:</h3>
+        <ol>
+            <li>En förrändring i koden görs.</li>
+            <li>Förrändringen förbereds i Git, jag lägger till ett commit-meddelande och pushar till mitt remote-repo, oftast i en separat branch.</li>
+            <li>När en förrändring är redo att gå live så använder jag "git merge" för att lägga till mina förrändringar till main branch och sen "npm run build" för att kompilera HTML, CSS och JavaScript.</li>
+            <li>De kompilerade filerna hamnar i en mapp som heter "dist" som sedan Netlify kollar på i mitt Git-repo för att kunna spegla dem på webbplatsen.</li>
+        </ol>
+
+        <p>Det som är automatiserat med Parcel är optimering av bilder, bakåtkompabilitet, kopiering av arbetsfiler till mapp för publicering med optimerade filer samt minifiering av HTML, CSS och JS.</p>
+        <p>Det som är automatiserat med GitHub och Netlify är publiceringen av webbplatsen.</p>
+    </main>
+
+    <footer>
+        <p>Front-end baserad webbutveckling (DT211G) - Moment 1</p>
+        <p>&copy; Max Assermark 2023</p>
+    </footer>
+</body>
+</html>

@@ -1,6 +1,109 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
 * {
-  color: red;
-  font-family: Verdana, "sans-serif";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "sans-serif";
+}
+
+p, li {
+  font-size: 1.2em;
+}
+
+body {
+  background-color: #fdf7e4;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+header {
+  background-color: #ded0b6;
+  border-bottom: 1px solid #000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  display: flex;
+}
+
+header > ul > li {
+  padding-left: 1.5em;
+  display: inline;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 0 2em;
+  line-height: 2em;
+}
+
+main > h2, main > h3 {
+  padding-top: .5em;
+}
+
+main > p {
+  padding: 1em 0 .5em;
+}
+
+main > ul {
+  padding-top: .5em;
+}
+
+main > ul > li, main > ol > li {
+  padding: .5em 0;
+}
+
+footer {
+  background-color: #ded0b6;
+  border-top: 1px solid #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  min-height: 5em;
+  margin-top: auto;
+  display: flex;
+}
+
+#image-collage {
+  grid-template: auto auto / repeat(3, auto);
+  display: grid;
+}
+
+#image-collage img {
+  border: 1px solid #000;
+  max-width: 14em;
+  margin: .5em;
+}
+
+@media (width <= 800px) {
+  #image-collage {
+    grid-template: repeat(3, auto) / auto auto;
+  }
+
+  #image-collage img {
+    max-width: 95%;
+  }
+}
+
+@media (width <= 600px) {
+  #image-collage {
+    grid-template: repeat(5, auto) / auto;
+  }
+
+  #image-collage img {
+    max-width: 95%;
+  }
 }
 
 /*# sourceMappingURL=index.34df27b5.css.map */
