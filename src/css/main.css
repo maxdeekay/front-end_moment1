@@ -47,7 +47,7 @@ main {
 
 main>h2, main>h3 { padding-top: 0.5em; }
 main>p { padding: 1em 0 0.5em 0; }
-main>ul { padding-top: 0.5em; }
+main>ul { padding-top: 0.5em; height: 100%; }
 main>ul>li, main>ol>li { padding: 0.5em 0 0.5em 0; }
 
 footer {
