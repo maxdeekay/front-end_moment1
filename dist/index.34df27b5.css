@@ -11,12 +11,14 @@ p, li {
 }
 
 body {
+  background-color: #fdf7e4;
   flex-direction: column;
   min-height: 100vh;
   display: flex;
 }
 
 header {
+  background-color: #ded0b6;
   border-bottom: 1px solid #000;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +43,7 @@ header a:hover {
 main {
   max-width: 50em;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0 2em;
   line-height: 2em;
 }
 
@@ -62,6 +64,7 @@ main > ul > li {
 }
 
 footer {
+  background-color: #ded0b6;
   border-top: 1px solid #000;
   flex-direction: column;
   justify-content: center;
@@ -70,6 +73,37 @@ footer {
   min-height: 5em;
   margin-top: auto;
   display: flex;
+}
+
+#image-collage {
+  grid-template: auto auto / repeat(3, auto);
+  display: grid;
+}
+
+#image-collage img {
+  border: 1px solid #000;
+  max-width: 14em;
+  margin: .5em;
+}
+
+@media (width <= 800px) {
+  #image-collage {
+    grid-template: repeat(3, auto) / auto auto;
+  }
+
+  #image-collage img {
+    max-width: 95%;
+  }
+}
+
+@media (width <= 600px) {
+  #image-collage {
+    grid-template: repeat(5, auto) / auto;
+  }
+
+  #image-collage img {
+    max-width: 95%;
+  }
 }
 
 /*# sourceMappingURL=index.34df27b5.css.map */

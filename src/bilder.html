@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="module" defer></script>
+    <title>Moment 1</title>
+</head>
+<body>
+    <header>
+        <h1>DT211G - MOMENT 1</h1>
+        <ul>
+            <li><a href="index.html">STARTSIDA</li></a>
+            <li><a href="bilder.html">BILDER</li></a>
+            <li><a href="arbetsprocess.html">ARBETSPROCESS</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <h2>Bilder i JPG-format direkt omvandlade till WEBP med Parcel</h2>
+        
+        <div id="image-collage">
+            <picture>
+                <source srcset="images/dromfangare.jpg?as=webp&width=500" type="image/webp"/>
+                <img src="images/dromfangare.jpg" alt="bild på drömfångare">
+            </picture>
+            <picture>
+                <source srcset="images/flygplan.jpg?as=webp&width=500" type="image/webp"/>
+                <img src="images/flygplan.jpg" alt="bild på drömfångare">
+            </picture>
+            <picture>
+                <source srcset="images/ljusstakar.jpg?as=webp&width=500" type="image/webp"/>
+                <img src="images/ljusstakar.jpg" alt="bild på drömfångare">
+            </picture>
+            <picture>
+                <source srcset="images/porslinsfigur.jpg?as=webp&width=500" type="image/webp"/>
+                <img src="images/porslinsfigur.jpg" alt="bild på drömfångare">
+            </picture>
+            <picture>
+                <source srcset="images/tandstickor.jpg?as=webp&width=500" type="image/webp"/>
+                <img src="images/tandstickor.jpg" alt="bild på drömfångare">
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        <p>Front-end baserad webbutveckling (DT211G) - Moment 1</p>
+        <p>&copy; Max Assermark 2023</p>
+    </footer>
+</body>
+</html>
