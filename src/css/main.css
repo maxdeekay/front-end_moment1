@@ -8,6 +8,7 @@
 }
 
 p { font-size: 1.2em; }
+li { font-size: 1.2em; }
 
 body {
     min-height: 100vh;
@@ -64,11 +65,10 @@ footer {
     max-width: 14em;
 }
 
-/* TESTING ZONE */
+/* Responsive menu styling */
 nav {
     background-color: #DED0B6;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
-    font-size: 1.4em;
     position: absolute;
     right: 0;
     top: 0;
@@ -154,6 +154,7 @@ nav li:hover {
     top: -3px;
 }
 
+/* Nav bar styling for wide resolutions */
 @media only screen and (min-width: 992px) {
     header {
         padding: 1em 1em;
@@ -178,7 +179,6 @@ nav li:hover {
         right: 0;
         top: 0;
         height: auto;
-        font-size: 1.4em;
         width: auto;
     }
 
@@ -193,6 +193,7 @@ nav li:hover {
     }
 }
 
+/* Styling for smaller resolutions */
 @media (width <= 800px) {
     #image-collage {
         grid-template: repeat(3, auto) / auto auto;

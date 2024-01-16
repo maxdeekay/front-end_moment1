@@ -10,11 +10,29 @@
 <body>
     <header>
         <h1>DT211G - MOMENT 1</h1>
-        <ul>
-            <li><a href="index.html">STARTSIDA</li></a>
-            <li><a href="bilder.html">BILDER</li></a>
-            <li><a href="arbetsprocess.html">ARBETSPROCESS</li></a>
-        </ul>
+
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <nav id="nav-menu">
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <ul>
+                <li><a href="index.html">STARTSIDA</a></li>
+                <li><a href="bilder.html">BILDER</a></li>
+                <li><a href="arbetsprocess.html">ARBETSPROCESS</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -24,8 +42,8 @@
         <ol>
             <li>En förrändring i koden görs.</li>
             <li>Förrändringen förbereds i Git, jag lägger till ett commit-meddelande och pushar till mitt remote-repo, oftast i en separat branch.</li>
-            <li>När en förrändring är redo att gå live så använder jag "git merge" för att lägga till mina förrändringar till main branch och sen "npm run build" för att kompilera HTML, CSS och JavaScript.</li>
-            <li>De kompilerade filerna hamnar i en mapp som heter "dist" som sedan Netlify kollar på i mitt Git-repo för att kunna spegla dem på webbplatsen.</li>
+            <li>När en förrändring är redo att gå live så använder jag "git merge" för att lägga till mina förrändringar till main branch.</li>
+            <li>När Netlify känner av en förändring i min main branch så kör den själv mitt build-kommando "npm run build" och kompilerar HTML, CSS samt JS och speglar dem på webbplatsen.</li>
         </ol>
 
         <p>Det som är automatiserat med Parcel är optimering av bilder, bakåtkompabilitet, kopiering av arbetsfiler till mapp för publicering med optimerade filer samt minifiering av HTML, CSS och JS.</p>
